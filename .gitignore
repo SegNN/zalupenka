@@ -17,8 +17,6 @@ optionsshaders.txt
 assets/
 build/
 gradle/
-libraries/
-natives/
 
 # Minecraft client data under src/main/java
 src/main/java/assets/
