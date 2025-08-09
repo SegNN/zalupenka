@@ -1,0 +1,11 @@
+/*
+ * Decompiled with CFR 0.153-SNAPSHOT (d6f6758-dirty).
+ */
+package fun.kubik.itemics.api.cache;
+
+public interface IWorldData {
+    public ICachedWorld getCachedWorld();
+
+    public IWaypointCollection getWaypoints();
+}
+

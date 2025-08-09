@@ -1,0 +1,731 @@
+{
+  "Theme": {
+    "Client": {
+      "color": "-9085542, -14147788",
+      "selected": false
+    },
+    "Kubik": {
+      "color": "-13578345, -15177909",
+      "selected": false
+    },
+    "Custom": {
+      "color": "-520947, -1",
+      "selected": true
+    }
+  },
+  "Modules": {
+    "AimBot": {
+      "state": false,
+      "Options": {
+        "оружия": "лук, арбалет, трезубес",
+        "Binded": {
+          "лук": -1,
+          "арбалет": -1,
+          "трезубес": -1
+        },
+        "Prediction": true,
+        "bind": -2,
+        "FOV": 180.0,
+        "Circle FOV": false,
+        "Auto Wall": false
+      }
+    },
+    "AirStuck": {
+      "state": false
+    },
+    "AntiBot": {
+      "state": false,
+      "Options": {
+        "Mode": "ReallyWorld",
+        "Checks": "",
+        "Binded": {
+          "Armor Check": -1,
+          "Enchant Check": -1,
+          "Armor Damaged Check": -1,
+          "Off Hand Check": -1,
+          "Equip Check": -1,
+          "Main Hand Check": -1,
+          "Food Check": -1,
+          "Unique Check": -1
+        }
+      }
+    },
+    "Arrows": {
+      "state": false,
+      "Options": {
+        "Options": "Name, Distance",
+        "Binded": {
+          "Name": -1,
+          "Distance": -1
+        },
+        "Distance": 30.0
+      }
+    },
+    "Aura": {
+      "state": false,
+      "keyIndex": 82,
+      "Options": {
+        "Mode Rotation": "ReallyWorld",
+        "Options": "Only Crits, Shield Breaker, Unpress Shield, Random Hits, Only Jump",
+        "Binded": {
+          "Only Crits": -1,
+          "Shield Breaker": -1,
+          "Unpress Shield": -1,
+          "Dont Hit Eating": -1,
+          "Dont Hit Walls": -1,
+          "Random Hits": -1,
+          "Only Jump": -1,
+          "Players": -1,
+          "Creative": -1,
+          "Mobs": -1,
+          "Naked": -1,
+          "Friends": -1
+        },
+        "Walls Bypass": "None",
+        "Distance": 3.0,
+        "Pre Distance": 0.5,
+        "Snap Ticks": 1.0,
+        "Lerp Speed": 6.0,
+        "Movement Fix": true,
+        "bind": -2,
+        "Correction Type": "Silent",
+        "Targets": "Players, Creative, Naked"
+      }
+    },
+    "AutoAccept": {
+      "state": false
+    },
+    "AutoDuel": {
+      "state": false,
+      "Options": {
+        "Режим": "Ball"
+      }
+    },
+    "AutoEat": {
+      "state": false,
+      "Options": {
+        "Hungry Value": 5.0
+      }
+    },
+    "AutoFarm": {
+      "state": false,
+      "Options": {
+        "Радиус": 5.0,
+        "Задержка": 500.0,
+        "Растения": "Тыква, Арбуз, Адский нарост, Тростник, Морковь, Картофель, Свёкла, Пшеница",
+        "Binded": {
+          "Тыква": -1,
+          "Арбуз": -1,
+          "Адский нарост": -1,
+          "Тростник": -1,
+          "Морковь": -1,
+          "Картофель": -1,
+          "Свёкла": -1,
+          "Пшеница": -1
+        },
+        "Подбор предметов": true,
+        "bind": -2,
+        "Автопосадка": true,
+        "Отображение процентов": true,
+        "Только спелые": true
+      }
+    },
+    "AutoLeave": {
+      "state": false,
+      "Options": {
+        "Type": "Spawn",
+        "Distance": 15.0,
+        "Targets": "Players, Moder",
+        "Binded": {
+          "Players": -1,
+          "Moder": -1
+        },
+        "Auto Disable": true,
+        "bind": -2,
+        "Only Vanish": false
+      }
+    },
+    "AutoPotion": {
+      "state": false,
+      "Options": {
+        "Potions": "Strength, Speed, Fire Resistance",
+        "Binded": {
+          "Strength": -1,
+          "Speed": -1,
+          "Fire Resistance": -1
+        },
+        "Only Ground": true,
+        "bind": -2
+      }
+    },
+    "AutoSprint": {
+      "state": false,
+      "Options": {
+        "Mode": "Legit"
+      }
+    },
+    "AutoSwap": {
+      "state": false,
+      "Options": {
+        "Mode": "ReallyWorld",
+        "First Item": "Ball",
+        "Second Item": "Ball",
+        "Key": -1
+      }
+    },
+    "AutoTool": {
+      "state": false
+    },
+    "AutoTotem": {
+      "state": false,
+      "Options": {
+        "Mode": "ReallyWorld",
+        "Options": "Elytra Health, Ender Crystal",
+        "Binded": {
+          "Elytra Health": -1,
+          "Ender Crystal": -1
+        },
+        "Health": 5.0,
+        "Elytra Health": 9.0,
+        "Crystal Distance": 6.0,
+        "Delay": 200.0,
+        "No Swap Shar": true,
+        "bind": -2
+      }
+    },
+    "BetterChat": {
+      "state": false,
+      "Options": {
+        "хуйня": false,
+        "bind": -2
+      }
+    },
+    "BetterMinecraft": {
+      "state": false,
+      "Options": {
+        "Elements": "",
+        "Binded": {
+          "Extra Hunger": -1,
+          "Camera Through Walls": -1
+        }
+      }
+    },
+    "BlockEsp": {
+      "state": false
+    },
+    "ChinaHat": {
+      "state": false
+    },
+    "ClickAction": {
+      "state": false,
+      "Options": {
+        "Elements": "Pearl, Friend",
+        "Binded": {
+          "Pearl": -1,
+          "Friend": -1
+        },
+        "Mode": "Legit",
+        "Pearl Key": -1,
+        "Friend Key": -1
+      }
+    },
+    "ClickGui": {
+      "state": false,
+      "keyIndex": 344,
+      "Options": {
+        "Betters": "",
+        "Binded": {
+          "Darkening Background": -1,
+          "Colorful Background": -1
+        },
+        "Size": "Small",
+        "Panel Design": "Transparent",
+        "Blur Compression": 8.0
+      }
+    },
+    "ClientSound": {
+      "state": false,
+      "Options": {
+        "Volume": 70.0,
+        "Settings": "",
+        "Binded": {
+          "Scrolling": -1,
+          "Module": -1,
+          "Notification": -1
+        }
+      }
+    },
+    "CrackCrash": {
+      "state": false
+    },
+    "CrystalAura": {
+      "state": false
+    },
+    "CrystalOptimizer": {
+      "state": false
+    },
+    "Custom World": {
+      "state": false,
+      "Options": {
+        "Mode": "Time, Fog",
+        "Binded": {
+          "Time": -1,
+          "Fog": -1
+        },
+        "Time": "Morning",
+        "Distance Fog": 4.0
+      }
+    },
+    "CustomModel": {
+      "state": false,
+      "Options": {
+        "Mode": "Rabbit",
+        "Elements": "Self, Friends, Others",
+        "Binded": {
+          "Self": -1,
+          "Friends": -1,
+          "Others": -1
+        }
+      }
+    },
+    "ElytraBooster": {
+      "state": false,
+      "Options": {
+        "Mode": "Max Speed",
+        "Speed": 1.5,
+        "Anti Target": false,
+        "bind": -2,
+        "Anti Target Speed": 2.5
+      }
+    },
+    "ElytraBounce": {
+      "state": false,
+      "Options": {
+        "Pitch": -45.0
+      }
+    },
+    "ElytraFly": {
+      "state": false,
+      "Options": {
+        "Mode": "Старый",
+        "Задержка фейверка": 400.0,
+        "Синхронизация с тпс": false,
+        "bind": -2
+      }
+    },
+    "ElytraMotion": {
+      "state": false,
+      "Options": {
+        "Hover": true,
+        "bind": -2,
+        "Target Attraction": true,
+        "Hover Height": 2.0,
+        "Attraction Speed": 0.3,
+        "Attraction Distance": 5.0
+      }
+    },
+    "ElytraSwap": {
+      "state": false,
+      "Options": {
+        "Mode": "ReallyWorld",
+        "Swap Key": -1,
+        "Boost Key": -1,
+        "Auto Jump": false,
+        "bind": -2,
+        "Ускорение": true,
+        "Boost x": 0.05,
+        "Boost y": 0.05,
+        "Доп.Скорость": true,
+        "Доп.Доп.Скорость": false
+      }
+    },
+    "ElytraTarget": {
+      "state": false,
+      "Options": {
+        "Options": "Elytra Predict, Always Hit",
+        "Binded": {
+          "Elytra Predict": -1,
+          "Always Hit": -1
+        },
+        "Predict Option": "Auto Distance",
+        "Bypass": "Default",
+        "Predict Distance": 4.7,
+        "Distance": 3.0,
+        "Pre Distance": 15.0,
+        "Delay": 200.0
+      }
+    },
+    "ElytraTweaks": {
+      "state": false,
+      "Options": {
+        "Mode": "New",
+        "Cooldown": 500.0,
+        "Cooldown On Elytra": 150.0
+      }
+    },
+    "EnderChestExploit": {
+      "state": false,
+      "Options": {
+        "Кнопка сейва": -1
+      }
+    },
+    "ESP": {
+      "state": true,
+      "Options": {
+        "Elements": "Armor",
+        "Binded": {
+          "Armor": -1,
+          "Enchantments": -1
+        },
+        "Armor Elements": "Enchantments"
+      }
+    },
+    "FastBreak": {
+      "state": false,
+      "Options": {
+        "Mode": "Default",
+        "Custom Speed": 1.0
+      }
+    },
+    "FireworkESP": {
+      "state": false,
+      "Options": {
+        "Render Icon": true,
+        "bind": -2
+      }
+    },
+    "FixHP": {
+      "state": false
+    },
+    "FlagDetector": {
+      "state": false
+    },
+    "Flyslow": {
+      "state": false
+    },
+    "FreeCam": {
+      "state": false,
+      "Options": {
+        "Скорость по XZ": 1.0,
+        "Gamma": false,
+        "bind": -2
+      }
+    },
+    "FullBright": {
+      "state": false
+    },
+    "GodMode": {
+      "state": false
+    },
+    "GriefJoiner": {
+      "state": false,
+      "Options": {
+        "Mode": "Grief",
+        "Grief": 1.0,
+        "Delay": 1000.0
+      }
+    },
+    "GuiMove": {
+      "state": false
+    },
+    "HitBox": {
+      "state": false,
+      "Options": {
+        "Size": 0.2,
+        "Visible": false,
+        "bind": -2
+      }
+    },
+    "HitSound": {
+      "state": false
+    },
+    "Interface": {
+      "state": true,
+      "Options": {
+        "Elements": "KeyBinds, StaffList, TargetHud, PotionList, Information, WaterMark, ArmorHud, Notifications",
+        "Binded": {
+          "KeyBinds": -1,
+          "StaffList": -1,
+          "TargetHud": -1,
+          "PotionList": -1,
+          "Information": -1,
+          "WaterMark": -1,
+          "ArmorHud": -1,
+          "Notifications": -1
+        },
+        "Notification Design": "Standard",
+        "Compression": 1.0
+      }
+    },
+    "ItemESP": {
+      "state": false,
+      "Options": {
+        "Render Icon": false,
+        "bind": -2
+      }
+    },
+    "ItemFinder": {
+      "state": false,
+      "Options": {
+        "Mode": "Silent Aim",
+        "Elements": "Skull, Elytra, Enchanted Golden Apple",
+        "Binded": {
+          "Skull": -1,
+          "Elytra": -1,
+          "Enchanted Golden Apple": -1
+        }
+      }
+    },
+    "ItemsCooldown": {
+      "state": false,
+      "Options": {
+        "Items": "Golden Apple, Pearl, Chorus",
+        "Binded": {
+          "Golden Apple": -1,
+          "Pearl": -1,
+          "Chorus": -1
+        },
+        "Golden Apple Cooldown": 4.35,
+        "Pearl Cooldown": 14.05,
+        "Chorus Cooldown": 2.3,
+        "Only Pvp": true,
+        "bind": -2
+      }
+    },
+    "ItemScroller": {
+      "state": false,
+      "Options": {
+        "Delay": 20.0
+      }
+    },
+    "ItemSwapFix": {
+      "state": false
+    },
+    "LeaveTracker": {
+      "state": false
+    },
+    "NameProtect": {
+      "state": false,
+      "Options": {
+        "Name": "",
+        "Friends": true,
+        "bind": -2
+      }
+    },
+    "NoClip": {
+      "state": false,
+      "Options": {
+        "Mode": "ReallyWorld"
+      }
+    },
+    "NoDelay": {
+      "state": false,
+      "Options": {
+        "Elements": "Jump, Right Click, Experience Bottle",
+        "Binded": {
+          "Jump": -1,
+          "Right Click": -1,
+          "Experience Bottle": -1
+        }
+      }
+    },
+    "NoFriendDamage": {
+      "state": false
+    },
+    "NoGameOverlay": {
+      "state": false,
+      "Options": {
+        "Elements": "Hurt, PumpkinOverlay, TotemPop, Fire, BossBar, Scoreboard, Block, WaterFog, LavaFog, Nausea, Blindness, Hologram",
+        "Binded": {
+          "Hurt": -1,
+          "PumpkinOverlay": -1,
+          "TotemPop": -1,
+          "Fire": -1,
+          "BossBar": -1,
+          "Scoreboard": -1,
+          "Block": -1,
+          "WaterFog": -1,
+          "LavaFog": -1,
+          "Nausea": -1,
+          "Blindness": -1,
+          "Hologram": -1
+        }
+      }
+    },
+    "NoInteract": {
+      "state": false,
+      "Options": {
+        "Все блоки": false,
+        "bind": -2,
+        "Обьекты": "Стойки, Сундуки, Двери, Кнопки, Воронки, Раздатчики, Нотные блоки, Верстаки, Люки, Печки, Калитки, Наковальни, Рычаги",
+        "Binded": {
+          "Стойки": -1,
+          "Сундуки": -1,
+          "Двери": -1,
+          "Кнопки": -1,
+          "Воронки": -1,
+          "Раздатчики": -1,
+          "Нотные блоки": -1,
+          "Верстаки": -1,
+          "Люки": -1,
+          "Печки": -1,
+          "Калитки": -1,
+          "Наковальни": -1,
+          "Рычаги": -1
+        }
+      }
+    },
+    "NoPush": {
+      "state": false,
+      "Options": {
+        "Elements": "Blocks, Entities",
+        "Binded": {
+          "Blocks": -1,
+          "Entities": -1,
+          "Water": -1
+        }
+      }
+    },
+    "NoSlow": {
+      "state": false,
+      "Options": {
+        "Mode": "ReallyWorld",
+        "Speed": 1.0
+      }
+    },
+    "NoWeb": {
+      "state": false
+    },
+    "PacketDebug": {
+      "state": false,
+      "Options": {
+        "Options": "Send, Receive",
+        "Binded": {
+          "Send": -1,
+          "Receive": -1
+        }
+      }
+    },
+    "Particles": {
+      "state": false,
+      "Options": {
+        "Mode": "SnowFlake",
+        "Triggers": "Hit, Totem Pop",
+        "Binded": {
+          "Hit": -1,
+          "Totem Pop": -1,
+          "World": -1
+        },
+        "Count": 25.0,
+        "Rainbow": true,
+        "bind": -2
+      }
+    },
+    "Pearl Prediction": {
+      "state": false,
+      "Options": {
+        "Tag": true,
+        "bind": -2
+      }
+    },
+    "Pearl Target": {
+      "state": false
+    },
+    "RGExploit": {
+      "state": false,
+      "Options": {
+        "Mode": "Получатель",
+        "Радиус рг": 5.0,
+        "Мод РГ": "РВ",
+        "Кнопка отправки": -1
+      }
+    },
+    "RussianRoulette": {
+      "state": false
+    },
+    "Speed": {
+      "state": false,
+      "Options": {
+        "Mode": "ReallyWorld"
+      }
+    },
+    "Spinner": {
+      "state": false,
+      "Options": {
+        "Speed": 30.0,
+        "Angle": 0.0
+      }
+    },
+    "SRPSpoofer": {
+      "state": false
+    },
+    "SuperFirework": {
+      "state": false
+    },
+    "SwingAnimations": {
+      "state": false,
+      "Options": {
+        "Mode": "Default",
+        "Only Aura": false,
+        "bind": -2,
+        "Power": 6.0,
+        "Scale": 1.0,
+        "Speed": 6.0,
+        "Left X": 0.0,
+        "Left Y": 0.0,
+        "Left Z": 0.0,
+        "Right X": 0.0,
+        "Right Y": 0.0,
+        "Right Z": 0.0
+      }
+    },
+    "TargetESP": {
+      "state": false,
+      "Options": {
+        "Mode": "Circle"
+      }
+    },
+    "Test": {
+      "state": false
+    },
+    "Timer": {
+      "state": false,
+      "Options": {
+        "Mode": "Matrix",
+        "Speed": 2.0
+      }
+    },
+    "TotemPop": {
+      "state": false
+    },
+    "TPSSync": {
+      "state": false
+    },
+    "Tracers": {
+      "state": false,
+      "Options": {
+        "Width": 1.0
+      }
+    },
+    "TriggerBot": {
+      "state": false,
+      "Options": {
+        "Only Crits": true,
+        "bind": -2,
+        "Only With Space": false
+      }
+    },
+    "UnHook": {
+      "state": false
+    },
+    "Velocity": {
+      "state": false,
+      "Options": {
+        "Mode": "Matrix"
+      }
+    },
+    "VoiceChat": {
+      "state": false
+    }
+  }
+}

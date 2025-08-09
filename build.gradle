@@ -1,0 +1,146 @@
+buildscript {
+    repositories {
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath 'com.github.johnrengelman:shadow:8.1.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:2.0.0"
+        classpath 'org.yaml:snakeyaml:2.2'
+    }
+}
+
+plugins {
+    id 'java'
+    id 'idea'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+    id "org.jetbrains.gradle.plugin.idea-ext" version "1.1.8"
+
+    id "org.jetbrains.kotlin.jvm" version "2.0.0"
+    id 'org.jetbrains.kotlin.plugin.lombok' version '2.0.0'
+    id 'io.freefair.lombok' version '8.1.0'
+}
+
+group 'Mcp'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+configurations {
+    dimaskic {
+        extendsFrom(project.configurations.implementation)
+    }
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.32'
+    annotationProcessor 'org.projectlombok:lombok:1.18.32'
+
+    implementation fileTree(dir: "libraries/", includes: ["**/*.jar"])
+    compileOnly fileTree(dir: "libraries/", includes: ["**/*.jar"])
+    runtimeOnly fileTree(dir: "libraries/", includes: ["**/*.jar"])
+    annotationProcessor fileTree(dir: "libraries/", includes: ["**/*.jar"])
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.0.0"
+
+    implementation 'com.jhlabs:filters:2.0.235-1'
+    implementation 'org.joml:joml:1.10.8'
+    implementation 'org.telegram:telegrambots:6.9.7.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+    implementation 'net.dv8tion:JDA:5.0.0-beta.24'
+    implementation 'net.sf.trove4j:trove4j:3.0.3'
+    implementation 'com.neovisionaries:nv-websocket-client:2.14'
+    implementation 'org.slf4j:slf4j-simple:2.0.12'
+    implementation 'org.json:json:20240303'
+    implementation 'com.google.guava:guava:33.1.0-jre'
+    implementation 'org.apache.commons:commons-lang3:3.14.0'
+    implementation 'commons-io:commons-io:2.15.1'
+}
+
+task extractNatives {
+    doLast {
+        configurations.runtimeClasspath.each { file ->
+            if (file.name.contains('natives-windows')) {
+                copy {
+                    from zipTree(file)
+                    into 'natives'
+                    include '*.dll'
+                }
+            }
+        }
+    }
+}
+
+shadowJar {
+    configurations = [project.configurations.dimaskic]
+
+    archiveBaseName.set('Dimasik')
+    archiveClassifier.set('')
+    archiveVersion.set('')
+
+    exclude 'META-INF/*.SF'
+    exclude 'META-INF/*.DSA'
+    exclude 'META-INF/*.RSA'
+    exclude 'META-INF/MANIFEST.MF'
+    exclude 'META-INF/versions/**'
+
+    from('natives') {
+        into 'natives'
+    }
+
+    manifest {
+        attributes(
+                'Main-Class': 'Start',
+                'Implementation-Title': 'Dimaskic Client',
+                'Implementation-Version': project.version
+        )
+    }
+
+
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    mergeServiceFiles()
+
+    dependsOn extractNatives
+}
+
+tasks {
+    compileJava {
+        options.encoding = "UTF-8"
+        options.warnings = false
+    }
+
+    assemble {
+        dependsOn(shadowJar)
+    }
+
+    jar {
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+kotlin {
+    jvmToolchain(17)
+}
+
+idea.project.settings {
+    runConfigurations {
+        "Run"(org.jetbrains.gradle.ext.Application) {
+            mainClass = 'Start'
+            moduleName = project.idea.module.name + '.test'
+            workingDirectory = "$projectDir/run"
+            jvmArgs = '-Djava.library.path=natives'
+        }
+        "Build"(org.jetbrains.gradle.ext.Gradle) {
+            projectPath = projectDir
+            taskNames = ['assemble']
+        }
+    }
+}

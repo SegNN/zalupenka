@@ -1,0 +1,41 @@
+/*
+ * Decompiled with CFR 0.153-SNAPSHOT (d6f6758-dirty).
+ */
+package fun.kubik.itemics.utils;
+
+import fun.kubik.itemics.api.utils.input.Input;
+import net.minecraft.util.MovementInput;
+
+public class PlayerMovementInput
+extends MovementInput {
+    private final InputOverrideHandler handler;
+
+    PlayerMovementInput(InputOverrideHandler handler) {
+        this.handler = handler;
+    }
+
+    @Override
+    public void tickMovement(boolean p_225607_1_) {
+        this.moveStrafe = 0.0f;
+        this.moveForward = 0.0f;
+        this.jump = this.handler.isInputForcedDown(Input.JUMP);
+        this.forwardKeyDown = this.handler.isInputForcedDown(Input.MOVE_FORWARD);
+        if (this.forwardKeyDown) {
+            this.moveForward += 1.0f;
+        }
+        if (this.backKeyDown = this.handler.isInputForcedDown(Input.MOVE_BACK)) {
+            this.moveForward -= 1.0f;
+        }
+        if (this.leftKeyDown = this.handler.isInputForcedDown(Input.MOVE_LEFT)) {
+            this.moveStrafe += 1.0f;
+        }
+        if (this.rightKeyDown = this.handler.isInputForcedDown(Input.MOVE_RIGHT)) {
+            this.moveStrafe -= 1.0f;
+        }
+        if (this.sneaking = this.handler.isInputForcedDown(Input.SNEAK)) {
+            this.moveStrafe = (float)((double)this.moveStrafe * 0.3);
+            this.moveForward = (float)((double)this.moveForward * 0.3);
+        }
+    }
+}
+

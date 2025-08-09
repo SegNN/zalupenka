@@ -1,0 +1,15 @@
+/*
+ * Decompiled with CFR 0.153-SNAPSHOT (d6f6758-dirty).
+ */
+package fun.kubik.modules.movement;
+
+import fun.kubik.managers.module.Module;
+import fun.kubik.managers.module.main.Category;
+
+public class Fly
+extends Module {
+    public Fly() {
+        super("Flyslow", Category.MOVEMENT);
+    }
+}
+

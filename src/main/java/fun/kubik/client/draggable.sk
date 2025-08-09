@@ -1,0 +1,64 @@
+{
+  "Drag": {
+    "PotionList": "298.0:53.25",
+    "NearList": "268.0:129.0",
+    "KeyBinds": "1344.0:85.125",
+    "Staff Statistics": "1647.0:97.0",
+    "WaterMark": "14.0:16.0",
+    "Information": "350.0:46.0",
+    "ArmorHud": "772.0:860.0",
+    "TargetHud": "907.0:617.0"
+  },
+  "Next": {
+    "PotionList": {
+      "Options": {
+        "Design": "Standard",
+        "Compression": 1.0,
+        "Hide": true
+      }
+    },
+    "NearList": {
+      "Options": {}
+    },
+    "KeyBinds": {
+      "Options": {
+        "Design": "Standard",
+        "Compression": 1.0,
+        "Hide": true
+      }
+    },
+    "Staff Statistics": {
+      "Options": {
+        "Design": "Standard",
+        "Compression": 1.0,
+        "Hide": true,
+        "Head": false
+      }
+    },
+    "WaterMark": {
+      "Options": {
+        "Design": "Standard",
+        "Compression": 1.0,
+        "Show Username": true,
+        "Show FPS": true,
+        "Show Ping": true,
+        "Show Coordinates": true
+      }
+    },
+    "Information": {
+      "Options": {
+        "Design": "Standard",
+        "Compression": 1.0
+      }
+    },
+    "ArmorHud": {
+      "Options": {}
+    },
+    "TargetHud": {
+      "Options": {
+        "Design": "Standard",
+        "Compression": 1.0
+      }
+    }
+  }
+}

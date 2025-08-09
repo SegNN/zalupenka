@@ -1,0 +1,35 @@
+.idea
+*.iml
+target
+build
+
+# IDE
+.vscode/
+
+# Local runtime/config files
+servers.dat
+servers.dat_old
+options.txt
+optionsof.txt
+optionsshaders.txt
+
+# Big runtime directories (root)
+assets/
+build/
+gradle/
+libraries/
+natives/
+
+# Minecraft client data under src/main/java
+src/main/java/assets/
+src/main/java/crash-reports/
+src/main/java/logs/
+src/main/java/resourcepacks/
+src/main/java/saves/
+src/main/java/screenshots/
+src/main/java/server-resource-packs/
+src/main/java/shaderpacks/
+
+# Keep any leftover entries
+src/main/java/mcp/
+src/main/java/META-INF/
