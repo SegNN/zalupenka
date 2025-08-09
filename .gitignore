@@ -1,4 +1,3 @@
-.idea
 *.iml
 target
 build
@@ -27,7 +26,3 @@ src/main/java/saves/
 src/main/java/screenshots/
 src/main/java/server-resource-packs/
 src/main/java/shaderpacks/
-
-# Keep any leftover entries
-src/main/java/mcp/
-src/main/java/META-INF/
